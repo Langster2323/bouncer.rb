@@ -29,8 +29,20 @@ end
 check_age
 
 
-if $check_age > 18
-  puts "You are #{$check_age}, old enough to smoke, drink, and vote"
+if $check_age >= 18
+  puts "You are #{$check_age}, old enough to smoke and vote"
 elsif
-  puts "You can't do anything, get out of here!"
+  puts "But you can't do anything, get out of here!"
+end
+
+if $check_age >= 21
+  puts "You are #{$check_age}, here have a drink... it's on me!"
+elsif
+  puts "But sorry you're to young for a beer."
+end
+
+if $check_age >= 25
+  puts "You are #{$check_age}, and old enough to rent a car and drive me to Cali... lets go!"
+elsif
+  puts "But you can't rent a car"
 end
