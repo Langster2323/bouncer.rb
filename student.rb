@@ -5,13 +5,13 @@
 
 class Student
   def initialize(name)
+    @name = name
+  end
   def do_homework
-    puts "Writes awsome code."
+    puts " #{@name}Writes awsome code."
   end
 end
 
-dane = Student.new
-mike = Student.new
-ryan = Student.new
-
-dane.do_homework
+[Student.new("dane")
+Student.new("mike")
+Student.new("ryan")].each do |Student|

@@ -20,4 +20,5 @@ end
 def get_user_input
   print "<Pick a number... Any number!>"
   $user_input
+  if $user_input > 
 end

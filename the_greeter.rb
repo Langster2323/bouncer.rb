@@ -18,13 +18,14 @@ def greet_user
   puts "Hello! What is your name?"
   print "<Please type your name here:>"
   $user_name = gets.chomp
+
   puts "Hi, #{$user_name} it is nice to meet you!"
 end
 
 def get_user_input
   puts "What would you like to do?"
   print "(a)rrive, (l)eave, or (q)uit "
-  return gets.chomp
+  gets.chomp
 end
 
 def goodbye_user
@@ -46,10 +47,9 @@ system("clear")
 
   when 'l', 'leave'
     goodbye_user
-  when 'q', 'quit'
-    break
+  when 'q', 'quit' then break
   else
-    unknown_user
+    unknown_input
     puts "Sorry, I didn't catch that?"
   end
 end
