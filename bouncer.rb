@@ -5,3 +5,32 @@
 # - If I am older than 18, I can smoke.
 # - If I am older than 21, I can drink.
 # - If I am older than 25, I can rent a car.
+
+$check_age = ""
+def start_check
+end
+
+def greet_participant
+  puts "How old are you?"
+  print "<Please print your name here: >"
+  $check_age = gets.chomp.to_i
+end
+
+def check_age
+  greet_participant
+  start_check
+  goodbye_user
+end
+
+def goodbye_user
+  puts "Thank you for your information!"
+end
+
+check_age
+
+
+if $check_age > 18
+  puts "You are #{$check_age}, old enough to smoke, drink, and vote"
+elsif
+  puts "You can't do anything, get out of here!"
+end
