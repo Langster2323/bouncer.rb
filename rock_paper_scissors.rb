@@ -17,37 +17,38 @@ end
 player_move = game
 
 if player_move == "Rock" && COMPUTER == "Rock"
-  puts "Tie!"
+  puts "Tie! Player: #{player_move} vs. COMPUTER: #{COMPUTER}"
+
 end
 
 if player_move == "Scissors"  && COMPUTER == "Scissors"
-  puts "Tie!"
+  puts "Tie! Player: #{player_move} vs. COMPUTER: #{COMPUTER}"
 end
 
 if player_move == "Paper" && COMPUTER == "Paper"
-  puts "Tie!"
+  puts "Tie! Player: #{player_move} vs. COMPUTER: #{COMPUTER}"
 end
 
 if player_move == "Rock" && COMPUTER == "Scissors"
-  puts "You win!"
+  puts "You win! Player: #{player_move} vs. COMPUTER: #{COMPUTER}"
 end
 
 if player_move == "Rock" && COMPUTER == "Paper"
-  puts "You lose!"
+  puts "You lose! Player: #{player_move} vs. COMPUTER: #{COMPUTER}"
 end
 
 if player_move == "Scissors" && COMPUTER == "Paper"
-  puts "You win!"
+  puts "You win! Player: #{player_move} vs. COMPUTER: #{COMPUTER}"
 end
 
 if player_move == "Scissors" && COMPUTER == "Rock"
-  puts "You lose!"
+  puts "You lose! Player: #{player_move} vs. COMPUTER: #{COMPUTER}"
 end
 
 if player_move == "Paper" && COMPUTER == "Rock"
-  puts "You win!"
+  puts "You win! Player: #{player_move} vs. COMPUTER: #{COMPUTER}"
 end
 
 if player_move == "Paper" && COMPUTER == "Scissors"
-  puts "You lose!"
+  puts "You lose! Player: #{player_move} vs. COMPUTER: #{COMPUTER}"
 end
