@@ -12,6 +12,6 @@ class Student
   end
 end
 
-[Student.new("dane")
+Student.new("dane")
 Student.new("mike")
-Student.new("ryan")].each do |Student|
+Student.new("ryan").each do |Student|
